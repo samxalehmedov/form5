@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+    
+    form{
+          
+            text-align: center;
+        }
+        #bio{
+            resize: vertical;
+        }
+
+        </style>
+</head>
+
+
+<body>
+
+    <form action="" method="post">
+        <h1>Zoo Keeper Application Form</h1>
+        <p>Please complete the form.Mandatory fields are marked with a</p>
+        <fieldset>
+            <legend>CONTACT DETAILS</legend>
+            <table >
+                <tr>
+                    <th margin="left">Name</th>
+                    <td> <input required="required" placeholder="Write your name" type="text"></td>
+                </tr>
+                <tr>
+                    <th>Telephone</th>
+                    <td> <input placeholder="Enter your number" type="number"> </td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td> <input required="required" type="email" placeholder="Write your e-mail"> </td>
+                </tr>
+            </table>
+
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>
+            <table>
+                <tr>
+                    <th>Age</th>
+                    <td><input required="required" min="18" placeholder="Write your age" type="number"></td>
+                </tr>
+                <tr>
+                    <th>Gender</th>
+                    <td>
+                        <select name="gender" id="gender">
+                            <option selected disabled value="gender">Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>When did you
+                        first know you
+                        wanted to be a
+                        zoo-keeper? </th>
+                    <td> <textarea name="" id="bio" cols="21" rows="5"></textarea> </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>PICK YOUR FAVORITE ANIMALS</legend>
+
+            <table>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="zebre" id="zebra">
+                        <label for="zebra">Zebra</label>
+                        <input type="checkbox" name="cat" id="cat">
+                        <label for="cat">Cat</label>
+                        <input type="checkbox" name="anaconda" id="anaconda">
+                        <label for="anaconda">Anaconda</label>
+                        <input type="checkbox" name="human" id="human">
+                        <label for="human">Human</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="checkbox" name="elephant" id="elephant">
+                        <label for="elephant">Elephant</label>
+                        <input type="checkbox" name="wieldbest" id="wieldbeest">
+                        <label for="wieldbeest">Wieldbeest</label>
+                        <input type="checkbox" name="pigeon" id="pigeon">
+                        <label for="pigeon">Pigeon</label>
+                        <input type="checkbox" name="crab" id="crab">
+                        <label for="crab">Crab</label>
+
+                    </th>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <br>
+      <button type="submit" id="gonder"> Submit Application</button>
+
+    </form>
+
+</body>
+
+</html>
